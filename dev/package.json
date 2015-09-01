@@ -1,0 +1,33 @@
+{
+  "name": "breaking-bad-desing-concept",
+  "version": "1.0.0",
+  "description": "Breaking Bad website design concept designed by Ansh Deb and developed by Matic Leva.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DreadBoy/breaking-bad-design-concept.git"
+  },
+  "keywords": [
+    "breaking",
+    "bad",
+    "design",
+    "concept"
+  ],
+  "author": "Matic Leva",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/DreadBoy/breaking-bad-design-concept/issues"
+  },
+  "homepage": "https://github.com/DreadBoy/breaking-bad-design-concept#readme",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-copy": "0.0.2",
+    "gulp-minify": "0.0.5",
+    "gulp-minify-css": "^1.2.1",
+    "gulp-sass": "^2.0.4",
+    "gulp-sourcemaps": "^1.5.2"
+  }
+}

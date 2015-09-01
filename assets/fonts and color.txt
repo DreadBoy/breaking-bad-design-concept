@@ -1,0 +1,5 @@
+Color hex code : #eba208
+		 rgb(235,162,8)
+
+Fonts used : Bebas Neue Regular (H1, top level menu)
+	     Lato Medium (paragraph, form elements)
