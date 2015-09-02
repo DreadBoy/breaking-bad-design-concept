@@ -422,7 +422,8 @@ html {
   font-size: 30px;
   font-weight: 700; }
   .tabs-item {
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    cursor: pointer; }
 
 #tabMethlab:checked ~ .tabs .tabs-item.tabs-item_methlab,
 #tabMeth:checked ~ .tabs .tabs-item.tabs-item_meth,
@@ -529,7 +530,8 @@ a,
   .action-go {
     margin-left: 10px;
     font-size: 18px;
-    font-weight: 600; }
+    font-weight: 600;
+    cursor: pointer; }
 
 .toggle-hidden {
   display: none; }

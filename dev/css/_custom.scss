@@ -71,6 +71,7 @@ html {
   font-weight: 700;
   &-item {
     text-transform: uppercase;
+    cursor: pointer;
   }
 }
 
@@ -200,6 +201,7 @@ a,
     margin-left: 10px;
     font-size: 18px;
     font-weight: 600;
+    cursor: pointer;
   }
 }
 
