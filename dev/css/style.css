@@ -448,6 +448,14 @@ html {
   transition: all 0.5s ease-in-out; }
   .content_methlab {
     background-image: url(images/methlab.jpg); }
+  .content_meth {
+    background-image: url(images/meth.jpg); }
+  .content_competitors {
+    background-image: url(images/competitors.jpg); }
+  .content_about {
+    background-image: url(images/about.jpg); }
+  .content_contact {
+    background-image: url(images/contact.jpg); }
 
 #tabMethlab:checked ~ .content.content_methlab,
 #tabMeth:checked ~ .content.content_meth,

@@ -101,6 +101,18 @@ html {
   &_methlab {
     background-image: url(images/methlab.jpg);
   }
+  &_meth {
+    background-image: url(images/meth.jpg);
+  }
+  &_competitors {
+    background-image: url(images/competitors.jpg);
+  }
+  &_about {
+    background-image: url(images/about.jpg);
+  }
+  &_contact {
+    background-image: url(images/contact.jpg);
+  }
 }
 
 #tabMethlab:checked ~ .content.content_methlab,
