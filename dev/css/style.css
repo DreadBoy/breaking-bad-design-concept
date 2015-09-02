@@ -384,19 +384,88 @@ th {
 html {
   color: #eba208;
   font-family: 'Lato Medium', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #090502; }
+
+.area {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   background-position: right center;
   background-attachment: fixed;
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  opacity: 0;
+  z-index: 1;
+  transform: translateY(-50px);
+  transition: all 0.5s ease-in-out; }
+  .area_landing {
+    background-image: url(images/landing.jpg); }
 
-html.index {
-  background-image: url(images/index.jpg); }
+#areaLanding:checked ~ .area.area_landing,
+#areaIndex:checked ~ .area.area_index {
+  opacity: 1;
+  z-index: 2;
+  transform: translateY(0px); }
 
-a {
+.tabs {
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  right: 50px;
+  height: 35px;
+  z-index: 3;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 30px;
+  font-weight: 700; }
+  .tabs-item {
+    text-transform: uppercase; }
+
+#tabMethlab:checked ~ .tabs .tabs-item.tabs-item_methlab,
+#tabMeth:checked ~ .tabs .tabs-item.tabs-item_meth,
+#tabCompetitors:checked ~ .tabs .tabs-item.tabs-item_competitors,
+#tabAbout:checked ~ .tabs .tabs-item.tabs-item_about,
+#tabContact:checked ~ .tabs .tabs-item.tabs-item_contact {
+  border-bottom: 2px solid; }
+
+.content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-top: 50px;
+  background-position: right center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0;
+  z-index: 1;
+  transform: translateY(-50px);
+  transition: all 0.5s ease-in-out; }
+  .content_methlab {
+    background-image: url(images/methlab.jpg); }
+
+#tabMethlab:checked ~ .content.content_methlab,
+#tabMeth:checked ~ .content.content_meth,
+#tabCompetitors:checked ~ .content.content_competitors,
+#tabAbout:checked ~ .content.content_about,
+#tabContact:checked ~ .content.content_contact {
+  opacity: 1;
+  z-index: 2;
+  transform: translateY(0px); }
+
+a,
+.a {
   text-decoration: none;
   color: #eba208; }
   a:hover,
-  a:active {
+  a:active,
+  .a:hover,
+  .a:active {
     color: #d29107; }
 
 .bebas {
@@ -413,9 +482,8 @@ a {
   .action-title {
     margin: 0;
     padding: 10px;
-    font-size: 35px; }
-  .action-checkbox {
-    display: none; }
+    font-size: 35px;
+    text-transform: uppercase; }
   .action-list {
     list-style-type: none;
     padding: 0; }
@@ -435,7 +503,8 @@ a {
     max-width: 150px;
     font-size: 18px;
     text-align: center;
-    cursor: pointer; }
+    cursor: pointer;
+    text-transform: uppercase; }
     .action-item label {
       cursor: pointer;
       padding: 10px;
@@ -453,3 +522,6 @@ a {
     margin-left: 10px;
     font-size: 18px;
     font-weight: 600; }
+
+.toggle-hidden {
+  display: none; }
