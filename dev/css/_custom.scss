@@ -19,6 +19,17 @@ $primary: #eba208;
   box-sizing: border-box;
 }
 
+@mixin Bebas {
+  font-family: 'Bebas Neue Regular', Verdana, sans-serif;
+}
+
+@mixin user-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 .text-center {
   text-align: center;
 }
@@ -71,17 +82,20 @@ html {
   font-weight: 700;
   &-item {
     text-transform: uppercase;
+    @include Bebas;
     cursor: pointer;
+    @include user-select;
   }
 }
 
 #tabMethlab:checked ~ .tabs .tabs-item.tabs-item_methlab,
-#tabMeth:checked ~ .tabs .tabs-item.tabs-item_meth, 
-#tabCompetitors:checked ~ .tabs .tabs-item.tabs-item_competitors, 
-#tabAbout:checked ~ .tabs .tabs-item.tabs-item_about, 
+#tabMeth:checked ~ .tabs .tabs-item.tabs-item_meth,
+#tabCompetitors:checked ~ .tabs .tabs-item.tabs-item_competitors,
+#tabAbout:checked ~ .tabs .tabs-item.tabs-item_about,
 #tabContact:checked ~ .tabs .tabs-item.tabs-item_contact {
   border-bottom: 2px solid;
 }
+
 .content {
   position: absolute;
   top: 0;
@@ -117,8 +131,8 @@ html {
 }
 
 #tabMethlab:checked ~ .content.content_methlab,
-#tabMeth:checked ~ .content.content_meth, 
-#tabCompetitors:checked ~ .content.content_competitors, 
+#tabMeth:checked ~ .content.content_meth,
+#tabCompetitors:checked ~ .content.content_competitors,
 #tabAbout:checked ~ .content.content_about,
 #tabContact:checked ~ .content.content_contact {
   opacity: 1;
@@ -144,6 +158,10 @@ a,
   text-transform: uppercase;
 }
 
+.toggle-hidden {
+  display: none;
+}
+
 .action {
   width: 170px;
   position: absolute;
@@ -154,6 +172,7 @@ a,
     padding: 10px;
     font-size: 35px;
     text-transform: uppercase;
+    @include Bebas;
   }
   &-list {
     list-style-type: none;
@@ -180,6 +199,7 @@ a,
     text-align: center;
     cursor: pointer;
     text-transform: uppercase;
+    @include Bebas;
     label {
       cursor: pointer;
       padding: 10px;
@@ -202,9 +222,119 @@ a,
     font-size: 18px;
     font-weight: 600;
     cursor: pointer;
+    @include Bebas;
   }
 }
 
-.toggle-hidden {
-  display: none;
+.panel {
+  &_title {
+    text-transform: uppercase;
+    @include Bebas;
+    font-size: 70px;
+    font-weight: 800;
+    text-shadow: 2px 2px 4px black;
+  }
+  &_right {
+    text-align: right;
+  }
+  &_content {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.5em;
+    text-shadow: 1px 1px 2px black;
+  }
+}
+
+.panel-group_methlab {
+  position: absolute;
+  width: 820px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 50px;
+  .panel {
+    &_title {
+      width: 400px;
+      float: left;
+      text-align: right;
+    }
+    &_content {
+      float: left;
+      width: 420px;
+      padding-top: 7px;
+      padding-left: 7px;
+    }
+  }
+}
+
+.panel-group_meth {
+  position: absolute;
+  width: 510px;
+  right: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  .panel {
+    &_title {
+      width: 510px;
+      text-align: right;
+      font-size: 55px;
+      > span {
+        display: inline-block;
+        &:nth-child(2) {
+          font-size: 142px;
+          line-height: 110px;
+        }
+        &:nth-child(3) {
+          font-size: 99px;
+          line-height: 80px;
+        }
+        > span {
+          display: block;
+        }
+      }
+    }
+    &_content {
+      width: 510px;
+    }
+  }
+}
+
+.panel-group_competitors {
+  position: absolute;
+  width: 510px;
+  right: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  .panel {
+    &_title {
+      width: 400px;
+      text-align: right;
+      font-size: 55px;
+      > span {
+        display: inline-block;
+        > span {
+          display: block;
+        }
+        &:nth-child(1) {
+          font-size: 50px;
+          line-height: 34px;
+          border-right: 8px solid;
+          padding: 2px 8px 2px;
+          span:nth-child(2) {
+            font-size: 99px;
+            line-height: 90px;
+          }
+        }
+        &:nth-child(2) {
+          text-align: left;
+          font-size: 99px;
+          line-height: 90px;
+        }
+      }
+    }
+    &_content {
+      width: 431px;
+      padding-top: 10px;
+      padding-left: 80px;
+    }
+  }
 }

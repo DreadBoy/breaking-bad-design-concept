@@ -423,7 +423,12 @@ html {
   font-weight: 700; }
   .tabs-item {
     text-transform: uppercase;
-    cursor: pointer; }
+    font-family: 'Bebas Neue Regular', Verdana, sans-serif;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
 
 #tabMethlab:checked ~ .tabs .tabs-item.tabs-item_methlab,
 #tabMeth:checked ~ .tabs .tabs-item.tabs-item_meth,
@@ -483,6 +488,9 @@ a,
 .uppercase {
   text-transform: uppercase; }
 
+.toggle-hidden {
+  display: none; }
+
 .action {
   width: 170px;
   position: absolute;
@@ -492,7 +500,8 @@ a,
     margin: 0;
     padding: 10px;
     font-size: 35px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-family: 'Bebas Neue Regular', Verdana, sans-serif; }
   .action-list {
     list-style-type: none;
     padding: 0; }
@@ -513,7 +522,8 @@ a,
     font-size: 18px;
     text-align: center;
     cursor: pointer;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-family: 'Bebas Neue Regular', Verdana, sans-serif; }
     .action-item label {
       cursor: pointer;
       padding: 10px;
@@ -531,7 +541,91 @@ a,
     margin-left: 10px;
     font-size: 18px;
     font-weight: 600;
-    cursor: pointer; }
+    cursor: pointer;
+    font-family: 'Bebas Neue Regular', Verdana, sans-serif; }
 
-.toggle-hidden {
-  display: none; }
+.panel_title {
+  text-transform: uppercase;
+  font-family: 'Bebas Neue Regular', Verdana, sans-serif;
+  font-size: 70px;
+  font-weight: 800;
+  text-shadow: 2px 2px 4px black; }
+
+.panel_right {
+  text-align: right; }
+
+.panel_content {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.5em;
+  text-shadow: 1px 1px 2px black; }
+
+.panel-group_methlab {
+  position: absolute;
+  width: 820px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 50px; }
+  .panel-group_methlab .panel_title {
+    width: 400px;
+    float: left;
+    text-align: right; }
+  .panel-group_methlab .panel_content {
+    float: left;
+    width: 420px;
+    padding-top: 7px;
+    padding-left: 7px; }
+
+.panel-group_meth {
+  position: absolute;
+  width: 510px;
+  right: 50%;
+  top: 50%;
+  transform: translateY(-50%); }
+  .panel-group_meth .panel_title {
+    width: 510px;
+    text-align: right;
+    font-size: 55px; }
+    .panel-group_meth .panel_title > span {
+      display: inline-block; }
+      .panel-group_meth .panel_title > span:nth-child(2) {
+        font-size: 142px;
+        line-height: 110px; }
+      .panel-group_meth .panel_title > span:nth-child(3) {
+        font-size: 99px;
+        line-height: 80px; }
+      .panel-group_meth .panel_title > span > span {
+        display: block; }
+  .panel-group_meth .panel_content {
+    width: 510px; }
+
+.panel-group_competitors {
+  position: absolute;
+  width: 510px;
+  right: 50%;
+  top: 50%;
+  transform: translateY(-50%); }
+  .panel-group_competitors .panel_title {
+    width: 400px;
+    text-align: right;
+    font-size: 55px; }
+    .panel-group_competitors .panel_title > span {
+      display: inline-block; }
+      .panel-group_competitors .panel_title > span > span {
+        display: block; }
+      .panel-group_competitors .panel_title > span:nth-child(1) {
+        font-size: 50px;
+        line-height: 34px;
+        border-right: 8px solid;
+        padding: 2px 8px 2px; }
+        .panel-group_competitors .panel_title > span:nth-child(1) span:nth-child(2) {
+          font-size: 99px;
+          line-height: 90px; }
+      .panel-group_competitors .panel_title > span:nth-child(2) {
+        text-align: left;
+        font-size: 99px;
+        line-height: 90px; }
+  .panel-group_competitors .panel_content {
+    width: 431px;
+    padding-top: 10px;
+    padding-left: 80px; }
