@@ -544,6 +544,9 @@ a,
     cursor: pointer;
     font-family: 'Bebas Neue Regular', Verdana, sans-serif; }
 
+.panel-group {
+  position: absolute; }
+
 .panel_title {
   text-transform: uppercase;
   font-family: 'Bebas Neue Regular', Verdana, sans-serif;
@@ -561,7 +564,6 @@ a,
   text-shadow: 1px 1px 2px black; }
 
 .panel-group_methlab {
-  position: absolute;
   width: 820px;
   left: 50%;
   transform: translateX(-50%);
@@ -577,7 +579,6 @@ a,
     padding-left: 7px; }
 
 .panel-group_meth {
-  position: absolute;
   width: 510px;
   right: 50%;
   top: 50%;
@@ -600,7 +601,6 @@ a,
     width: 510px; }
 
 .panel-group_competitors {
-  position: absolute;
   width: 510px;
   right: 50%;
   top: 50%;
@@ -629,3 +629,36 @@ a,
     width: 431px;
     padding-top: 10px;
     padding-left: 80px; }
+
+.panel-group_aboutPinkman {
+  width: 370px;
+  left: 100px;
+  bottom: 100px; }
+  .panel-group_aboutPinkman .panel_title {
+    width: 370px;
+    text-align: left;
+    font-size: 110px;
+    line-height: 110px; }
+  .panel-group_aboutPinkman .panel_content {
+    width: 370px; }
+    .panel-group_aboutPinkman .panel_content:nth-child(2) {
+      font-size: 25px; }
+
+.panel-group_aboutHeisenberg {
+  width: 370px;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%); }
+  .panel-group_aboutHeisenberg .panel_title {
+    width: 370px;
+    text-align: left;
+    font-size: 110px;
+    line-height: 93px;
+    padding-bottom: 10px; }
+    .panel-group_aboutHeisenberg .panel_title span:nth-child(1) {
+      font-size: 48px;
+      line-height: 0; }
+  .panel-group_aboutHeisenberg .panel_content {
+    width: 370px; }
+    .panel-group_aboutHeisenberg .panel_content:nth-child(2) {
+      font-size: 25px; }

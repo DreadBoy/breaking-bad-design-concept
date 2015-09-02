@@ -23,6 +23,10 @@ $primary: #eba208;
   font-family: 'Bebas Neue Regular', Verdana, sans-serif;
 }
 
+@mixin Lato {
+  font-family: 'Lato Medium', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
 @mixin user-select {
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -226,6 +230,10 @@ a,
   }
 }
 
+.panel-group {
+  position: absolute;
+}
+
 .panel {
   &_title {
     text-transform: uppercase;
@@ -246,7 +254,6 @@ a,
 }
 
 .panel-group_methlab {
-  position: absolute;
   width: 820px;
   left: 50%;
   transform: translateX(-50%);
@@ -267,7 +274,6 @@ a,
 }
 
 .panel-group_meth {
-  position: absolute;
   width: 510px;
   right: 50%;
   top: 50%;
@@ -299,7 +305,6 @@ a,
 }
 
 .panel-group_competitors {
-  position: absolute;
   width: 510px;
   right: 50%;
   top: 50%;
@@ -335,6 +340,52 @@ a,
       width: 431px;
       padding-top: 10px;
       padding-left: 80px;
+    }
+  }
+}
+
+.panel-group_aboutPinkman {
+  width: 370px;
+  left: 100px;
+  bottom: 100px;
+  .panel {
+    &_title {
+      width: 370px;
+      text-align: left;
+      font-size: 110px;
+      line-height: 110px;
+    }
+    &_content {
+      width: 370px;
+      &:nth-child(2) {
+        font-size: 25px;
+      }
+    }
+  }
+}
+
+.panel-group_aboutHeisenberg {
+  width: 370px;
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%);
+  .panel {
+    &_title {
+      width: 370px;
+      text-align: left;
+      font-size: 110px;
+      line-height: 93px;
+      padding-bottom: 10px;
+      span:nth-child(1) {
+        font-size: 48px;
+        line-height: 0;
+      }
+    }
+    &_content {
+      width: 370px;
+      &:nth-child(2) {
+        font-size: 25px;
+      }
     }
   }
 }
