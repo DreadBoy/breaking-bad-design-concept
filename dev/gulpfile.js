@@ -26,7 +26,7 @@ gulp.task('build-sass', function() {
     .pipe(sourcemaps.init())
     .pipe(minifyCss())
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('./../dist/css'));
+    .pipe(gulp.dest('./css'));
 });
 
 gulp.task('build', ['build-sass'])

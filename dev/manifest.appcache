@@ -1,0 +1,25 @@
+CACHE MANIFEST
+# 2015-09-03:v2
+
+CACHE:
+index.html
+css/style.css
+css/fonts/bebasneue_regular-webfont.eot
+css/fonts/bebasneue_regular-webfont.svg
+css/fonts/bebasneue_regular-webfont.ttf
+css/fonts/bebasneue_regular-webfont.woff
+css/fonts/bebasneue_regular-webfont.woff2
+css/fonts/lato-medium-webfont.eot
+css/fonts/lato-medium-webfont.svg
+css/fonts/lato-medium-webfont.ttf
+css/fonts/lato-medium-webfont.woff
+css/fonts/lato-medium-webfont.woff2
+css/images/about.jpg
+css/images/competitors.jpg
+css/images/contact.jpg
+css/images/landing.jpg
+css/images/meth.jpg
+css/images/methlab.jpg
+
+NETWORK:
+*
