@@ -7,8 +7,8 @@
         <link rel="stylesheet" href="css/style.css" media="screen" title="style" charset="utf-8">
     </head>
     <body>
-        <input type="radio" name="area" class="toggle-hidden" id="areaLanding">
-        <input type="radio" name="area" checked class="toggle-hidden" id="areaIndex">
+        <input type="radio" name="area" checked class="toggle-hidden" id="areaLanding">
+        <input type="radio" name="area" class="toggle-hidden" id="areaIndex">
         <div class="area area_landing">
             <div class="action">
                 <h1 class="action-title text-center">Say my name</h1>
@@ -39,10 +39,10 @@
             </div>
         </div>
         <div class="area area_index">
-            <input type="radio" name="tab" class="toggle-hidden" id="tabMethlab">
+            <input type="radio" name="tab" checked class="toggle-hidden" id="tabMethlab">
             <input type="radio" name="tab" class="toggle-hidden" id="tabMeth">
             <input type="radio" name="tab" class="toggle-hidden" id="tabCompetitors">
-            <input type="radio" name="tab" checked class="toggle-hidden" id="tabAbout">
+            <input type="radio" name="tab" class="toggle-hidden" id="tabAbout">
             <input type="radio" name="tab" class="toggle-hidden" id="tabContact">
             <div class="content content_methlab">
                 <div class="panel-group panel-group_methlab">
@@ -122,7 +122,23 @@
                     </div>
                 </div>
             </div>
-            <div class="content content_contact"></div>
+            <div class="content content_contact">
+                <div class="panel-group panel-group_contact">
+                    <div class="panel panel_title">
+                        <span class="uppercase">
+                        <span>All bad things</span>
+                        <span>must come to an</span>
+                        <span>end</span>
+                        </span>
+                    </div>
+                    <div class="panel panel_content">
+                        <input name="contact_name" placeholder="name" id="contact_name" type="text">
+                        <input name="contact_email" placeholder="email id" id="contact_email" type="email">
+                        <textarea name="contact_details" placeholder="what do you want? (and how much)" id="contact_details" type="text"></textarea>
+                        <input value="submit" type="button">
+                    </div>
+                </div>
+            </div>
             <div class="tabs">
                 <label for="tabMethlab" class="tabs-item tabs-item_methlab">Meth lab</label>
                 <label for="tabMeth" class="tabs-item tabs-item_meth">What is meth</label>
